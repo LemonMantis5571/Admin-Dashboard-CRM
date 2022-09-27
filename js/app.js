@@ -7,7 +7,10 @@
 
 
         if(window.indexedDB.open('crm', 1)){
-            obtenerClientes();
+            setTimeout(() => {
+                obtenerClientes();
+            }, 5000);
+            
         }
 
         listadoClientes.addEventListener('click', eliminarRegistro);
